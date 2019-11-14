@@ -75,14 +75,12 @@
 			<version>7.41.2</version>
 		</dependency>
 	</dependencies>
-	
 	<distributionManagement>
   		<snapshotRepository>
     		<id>nexus</id>
-    		<url>http://3.14.132.201:8081/nexus/content/repositories/snapshots</url>
+    		<url>http://18.188.67.89:8081/nexus/content/repositories/snapshots/</url>
   		</snapshotRepository>
 	</distributionManagement>
-
 	<build>
 		<plugins>
 			<plugin>
@@ -111,5 +109,4 @@
 			</plugin>
 		</plugins>
 	</build>
-
 </project>
