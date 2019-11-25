@@ -76,10 +76,11 @@
 		</dependency>
 	</dependencies>
 	<distributionManagement>
-  		<snapshotRepository>
-    		<id>artifactory</id>
-    		<url>http://3.17.179.154:8081/artifactory/libs-snapshot-local</url>
-  		</snapshotRepository>
+	    <snapshotRepository>
+		<id>snapshots</id>
+		<name>1f9e87d08392-snapshots</name>
+		<url>http://3.17.179.154:8081/artifactory/libs-snapshot-local</url>
+	    </snapshotRepository>
 	</distributionManagement>
 	<build>
 		<plugins>
@@ -106,6 +107,11 @@
 						</goals>
 					</execution>
 				</executions>
+			</plugin>
+			<plugin>
+			    <groupId>org.codehaus.mojo</groupId>
+			    <artifactId>sonar-maven-plugin</artifactId>
+			    <version>3.7.0</version>
 			</plugin>
 		</plugins>
 	</build>
