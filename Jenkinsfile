@@ -13,13 +13,13 @@ pipeline {
 			}
 		}
 	}
-	stage("Quality Gate") {
-            steps {
-              timeout(time: 5, unit: 'MINUTES') {
-                waitForQualityGate abortPipeline: true
-              }
-            }
-          }
+	//stage("Quality Gate") {
+          //  steps {
+            //  timeout(time: 5, unit: 'MINUTES') {
+              //  waitForQualityGate abortPipeline: true
+              //}
+            //}
+          //}
 	stage ('Deploy') {
 		steps {
 			sh '/opt/maven/bin/mvn clean deploy -Dmaven.test.skip=true'
