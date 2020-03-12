@@ -82,6 +82,14 @@
 			<version>7.41.2</version>
 		</dependency>
 	</dependencies>
+	<distributionManagement>
+    <repository>
+            <id>deployment</id>
+            <name>Internal Releases</name>
+            <url>http://3.92.33.234:8081/nexus/content/repositories/Parking/</url>
+        </repository>
+        
+    </distributionManagement>
 	
 	
 	<build>
