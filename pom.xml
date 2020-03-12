@@ -86,7 +86,7 @@
     <repository>
             <id>deployment</id>
             <name>Internal Releases</name>
-            <url>http://3.92.33.234:8081/nexus/content/repositories/Parking/</url>
+            <url>http://3.92.33.234:8081/nexus/content/repositories/Pk/</url>
         </repository>
         
     </distributionManagement>
