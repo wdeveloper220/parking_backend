@@ -40,6 +40,12 @@
 			<optional>true</optional>
 		</dependency>
 		<dependency>
+    <groupId>org.codehaus.mojo</groupId>
+    <artifactId>sonar-maven-plugin</artifactId>
+    <version>3.7.0.1746</version>
+    <type>pom</type>
+</dependency>
+		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			<scope>runtime</scope>
@@ -107,6 +113,11 @@
 						</goals>
 					</execution>
 				</executions>
+			</plugin>
+			<plugin>
+			    <groupId>org.codehaus.mojo</groupId>
+			    <artifactId>sonar-maven-plugin</artifactId>
+			    <version>3.7.0.1746</version>
 			</plugin>
 			<plugin>
 			    <groupId>org.codehaus.mojo</groupId>
