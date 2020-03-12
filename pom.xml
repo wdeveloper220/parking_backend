@@ -32,6 +32,14 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+		<distributionManagement>
+    <repository>
+            <id>deployment</id>
+            <name>Internal Releases</name>
+            <url>http://3.92.33.234:8081/nexus/content/repositories/Parking/</url>
+        </repository>
+        
+    </distributionManagement>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
